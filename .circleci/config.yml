@@ -15,4 +15,4 @@ workflows:
   build_and_test: # < Slack and Email notifications will be delivered for workflows
     jobs:
     # All other notification integrations (HipChat, IRC, etc) will receive notification for each job. 
-      - test
+      - build
