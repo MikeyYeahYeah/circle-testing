@@ -5,14 +5,4 @@ jobs:
       - image: circleci/ubuntu:xenial
     steps:
       - checkout
-      - run:
-	        command: |
-	          echo "Hello"
-
-
-workflows:
-  version: 2
-  build_and_test: # < Slack and Email notifications will be delivered for workflows
-    jobs:
-    # All other notification integrations (HipChat, IRC, etc) will receive notification for each job. 
-      - build
+      - run: echo "Hello World"
