@@ -8,4 +8,4 @@ jobs:
       - run: echo "Hello World!!" > /tmp/helloworld.txt
     
       - store_artifacts:
-      path: /tmp/helloworld.txt
+          path: /tmp/helloworld.txt
