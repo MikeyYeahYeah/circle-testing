@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: ubuntu:16.04
+      - image: circleci/python:3.6-jessie-browsers
     steps:
       - checkout
       - run: echo "Hello World!!" > /tmp/helloworld.txt
