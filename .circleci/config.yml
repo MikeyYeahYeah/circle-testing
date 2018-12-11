@@ -5,4 +5,7 @@ jobs:
       - image: ubuntu:16.04
     steps:
       - checkout
-      - run: echo "Hello World!!"
+      - run: echo "Hello World!!" > /tmp/helloworld.txt
+    
+      - store_artifacts:
+      path: /tmp/helloworld.txt
