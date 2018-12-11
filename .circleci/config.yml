@@ -6,8 +6,8 @@ jobs:
     steps:
       - checkout
       - run:
-	command: |
-	  echo "Hello"
+	        command: |
+	          echo "Hello"
 
 
 workflows:
