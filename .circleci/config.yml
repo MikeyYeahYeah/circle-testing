@@ -1,8 +1,9 @@
 version: 2
 jobs:
   build:
-    docker:
-      - image: ubuntu:16.04
+#    docker:
+#      - image: ubuntu:16.04
+    machine: true
     steps:
       - checkout
       - run: echo "Hello World!!!!!"
